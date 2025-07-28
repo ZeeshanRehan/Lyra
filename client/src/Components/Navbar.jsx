@@ -22,7 +22,7 @@ export default function Navbar() {
         {/* Center Links */}
         <div className="flex space-x-8">
           <Link to="/about" className="hover:text-white">About</Link>
-          <Link to="/how-it-works" className="hover:text-white">How it works</Link>
+          {/* <Link to="/how-it-works" className="hover:text-white">How it works</Link> */}
           <Link to="/privacy" className="hover:text-white">Privacy</Link>
         </div>
 
