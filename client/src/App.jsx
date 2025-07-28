@@ -5,7 +5,7 @@ import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import Favorites from './Pages/Favorites';
 import About from './Pages/About';
-import HowItWorks from './Pages/HowItWorks';
+import HowItWorks from './Pages/HowitWorks'
 import Privacy from './Pages/Privacy';
 import Navbar from './Components/Navbar'; // ✅ make sure this is correct path
 
@@ -27,7 +27,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/about" element={<About />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/how-it-works" element={<HowitWorks />} />
           <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </Router>
