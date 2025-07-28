@@ -5,7 +5,7 @@ import Login from './Pages/Login';
 import Signup from './Pages/Signup';
 import Favorites from './Pages/Favorites';
 import About from './Pages/About';
-import HowItWorks from './Pages/HowitWorks'
+import HowitWorks from './Pages/HowitWorks'
 import Privacy from './Pages/Privacy';
 import Navbar from './Components/Navbar'; // ✅ make sure this is correct path
 
