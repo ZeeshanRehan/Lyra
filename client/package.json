@@ -12,6 +12,8 @@
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-h5-audio-player": "^3.10.0",
+    "react-player": "^2.16.0",
     "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {

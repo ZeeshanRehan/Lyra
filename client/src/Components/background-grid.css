@@ -1,0 +1,19 @@
+.background-grid {
+  background-image: 
+    linear-gradient(rgba(168, 85, 247, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168, 85, 247, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: pulse-grid 12s ease-in-out infinite;
+  opacity: 0.2;
+}
+
+@keyframes pulse-grid {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.015);
+  }
+}

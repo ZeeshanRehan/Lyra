@@ -1,8 +1,7 @@
 /* === Tailwind Base === */
 @import "tailwindcss";
 
-/* === Custom Animations & Utilities === */
-
+/* === Custom Animations === */
 @keyframes glow {
   0%, 100% {
     box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
@@ -16,15 +15,43 @@
   animation: glow 2.5s ease-in-out infinite;
 }
 
-@keyframes glow {
+@keyframes pulse-slow {
   0%, 100% {
-    box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+    opacity: 0.1;
   }
   50% {
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.9);
+    opacity: 0.25;
   }
 }
 
-.animate-glow {
-  animation: glow 2.5s ease-in-out infinite;
+.animate-pulse-slow {
+  animation: pulse-slow 10s ease-in-out infinite;
+}
+
+@keyframes grid-breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+}
+
+/* === Grid Background Base === */
+.bg-grid-pulse {
+  position: relative;
+  background-color: #e7e7e7; /* dark background base */
+}
+
+/* === Animated Grid Layer === */
+.bg-grid-pulse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: 60px 60px;
+  animation: grid-breathe 16s ease-in-out infinite;
+  z-index: -1;
+  opacity: 0.15;
+  will-change: transform, opacity;
+  pointer-events: none;
 }
