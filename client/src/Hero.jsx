@@ -29,7 +29,7 @@ const handleSubmit = async () => {
   setLoading(true);
   setResults([]);
   try {
-    const response = await fetch("https://lyra21.herokuapp.com/api/generate", {
+    const response = await fetch("https://lyra21-49332ff8d951.herokuapp.com/api/generate", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -49,7 +49,7 @@ const handleSubmit = async () => {
 
     const fetchedResults = await Promise.all(
       rawSongs.map(async (song) => {
-        const ytRes = await fetch(`https://lyra21.herokuapp.com/api/youtube?q=${encodeURIComponent(song)}`);
+        const ytRes = await fetch(`https://lyra21-49332ff8d951.herokuapp.com/api/youtube?q=${encodeURIComponent(song)}`);
         const ytData = await ytRes.json();
 
         return {
